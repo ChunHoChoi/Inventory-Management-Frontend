@@ -5,7 +5,7 @@
 <head>
     <!-- head içeriği burada yer alabilir -->
     <meta charset="UTF-8">
-    <title>Registration and Login System</title>
+    <title>Inventory Management System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -13,7 +13,7 @@
 <!-- Navigasyon menüsü burada yer alabilir -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Current Inventory</a>
+        <a class="navbar-brand" href="#">Inventory Management System</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,7 +42,7 @@
     <div class="row col-md-8 offset-md-2">
         <div class="card">
             <div class="card-header">
-                <h2 class="text-center">Add Product</h2>
+                <h2 class="text-center">Add New Product To Inventory</h2>
             </div>
             <div class="card-body">
                 <form method="post" role="form" th:action="@{/inventory/save}" th:object="${product}">
@@ -95,8 +95,8 @@
                         <!-- Hata mesajlarını ekle -->
                     </div>
 
-                    <div class="form-group mb-3">
-                        <button class="btn btn-primary" type="submit">Add Product</button>
+                    <div class="form-group mb-3 text-center">
+                        <button class="btn btn-primary" type="submit">Add New Product</button>
                     </div>
                 </form>
             </div>
